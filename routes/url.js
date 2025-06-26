@@ -7,7 +7,7 @@ const {
 const router = express.Router();
 
 router.post("/", handelGenerateNewShortURL);
+router.get("/analytics/:shortId", handelUrlAnalytics);
 router.get("/:shortId", handelRedirectUrl);
-router.get("analytics/:shortId", handelUrlAnalytics);
 
 module.exports = router;
